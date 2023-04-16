@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AboutUs</title>
+	<link rel="icon" type="text/css" href="images/Buk.PNG/">
+	<link rel="stylesheet" type="text/css" href="css/aboutUs.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/all.js"></script>
+	<script type="text/javascript" src="js/aboutUs.js"></script>
+	<script type="text/javascript">
+		var i = 0;//start point
+		var images = [];
+		var time = 1000;
+
+		//Image List
+		images[0] = 'images/Buk.PNG';
+		images[1] = 'images/download (6).jpg';
+		images[2] = 'images/images (11).jpg';
+		images[3] = 'images/images (7).jpg';
+		images[4] = 'images/images (24).jpg';
+		images[5] = 'images/images (9).jpg';
+		images[6] = 'images/images (8).jpg';
+		images[7] = 'images/images (10).jpg';
+		images[8] = 'images/images (13).jpg';
+		images[9] = 'images/images (14).jpg';
+		images[10] = 'images/images (12).jpg';
+		images[11] = 'images/images (6).jpg';
+		images[12] = 'images/images (2).jpg';
+		images[13] = 'images/download (3).jpg';
+		images[14] = 'images/download (5).jpg';
+
+		//Change Images
+		function changeImg(){
+			document.slide.src = images[i];
+
+			if (i < images.length - 1){
+				i++;
+			}
+			else{
+				i = 0;
+			}
+			setTimeout("changeImg()", time); 
+		}
+		window.onload = changeImg;
+	</script>
+</head>
+<body>
+	<!--================ Header ================-->
+	<div class="header">
+		<img src="images/images (5).jpg" style="height: 105px;">
+		<h1>BAYERO UNIVERSITY KANO</h1>
+		<h6>Knowledge, Excellent & Service</h6>
+	</div>
+	<!-- Nav link -->
+	<div class="link">
+		<ul>
+			<li><a href="../Index.html">Home</a></li>
+			<li><a href="#">About us</a></li>
+			<li><a href="Faculties and Courses.html">Faculties and Courses</a></li>
+			<li><a href="https://web.facebook.com/groups/664971911646714">News</a></li>
+			<li><a href="Login.html">LogIn</a></li>
+			<li><a href="ContactUs.html">Contact us</a></li>
+		</ul>
+	</div>
+
+	<!--================ content1 ================-->
+	<!-- <div class="content1">
+		<h2><marquee>About Bayero University Kano</marquee></h2>
+		<div class="sub_content1">
+			<h3>Bayero University Kano</h3>
+		    <h3>P.M.B   7156</h3>
+		    <h3>Establish in 2011</h3>
+		</div>
+	</div> -->
+
+	<!--================ content2 ================-->
+	<div class="content2">
+		<h2>About Bayero University Kano</h2>
+		<hr>
+		<p>
+			The Bayero University Kano (BUK),  Received its charter, along with eight newly established Federal Universities, from the Federal Government of Nigeria on Febuary  9, 1977. The University's campus is located in the capital of Kano State, Kano, an ancient town in North-western Nigeria. <a href="contactUs.html">more</a>
+		</p>
+		<h2>Objectives</h2>
+		<hr>
+		<p>
+			The University will <a href="Faculties and Courses.html">concern itself with teaching, learning, and research</a> for the attainment  of excellence particularly in its chosen areas of teaching and research to the end that it shall inculcate in its staff and studens those higher values which arefundamental to ethical, socio-economic, scientific and technological development of the Society. 
+		</p>
+	</div>
+	<hr class="hr">
+	<!--================ content3 ================-->
+	<div class="content3">
+		<div class="content3_text">
+		  <p>
+			The University would produce a new breed of graduates that would be dedicated to knowledgeable pursuit, aspire to traditions of excellence in all respects, and accepts selfless, disciplined, and dedicated public services as the highest good.
+		  </p>
+		</div> 
+		<div class="content3_img">
+			<img src="images/download.jpg">
+		</div>
+	</div>
+	<hr class="hr">
+	<!--================ content4 ================-->
+	<div class="content4">
+		<h2>Motto</h2>
+		<hr>
+		<p>
+			The Motto of BUK is: "Knowledge, Excellence, and Service". This is 		BUK's bold declaration that it will be a university build upon local and universal knowledge; knowledge that would be besed on the best tradition of excellence which has guided the best intellectual heritage of humankind; and knowledge and excellence premised on public service, the noble aspiration for community; national, and universal betterment, without which neither knowledge nor excellence as such would grow and be relevant to human development.
+		</p>
+	</div>
+	<hr class="hr">
+	<!--================ vission_&_mission ================-->
+	<div class="vission">
+		<h2>Vission</h2>
+		<hr>
+		<p></p>
+	</div>
+	<div class="mission">
+		<h2>Mission</h2>
+		<hr>
+		<p></p>
+	</div>
+	<div class="content1">
+		<img src="" name="slide" class="content1">
+		<h2>BUK Gallery</h2>
+	</div>
+	<!--================ Footer ================-->
+    <footer class="footer">
+    	<p>
+    		&copy; 2023 Bayero University Kano.
+    		<hr style="margin: -12px auto -4px; width: 70vw; border-width: 0.15em; color: gold">
+    		All rights reserved
+    	</p>
+    </footer>
+</body>
+</html>

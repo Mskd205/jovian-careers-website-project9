@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ContactUs</title>
+	<link rel="icon" type="text/css" href="images/Buk.PNG.jpg">
+	<link rel="stylesheet" type="text/css" href="css/contactUs.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/all.js"></script>
+	<script>    
+      function validate(){
+  var Fname = document.getElementById("Fname").value;
+  var Email = document.getElementById("Email").value;
+  var URL = document.getElementById("URL").value;
+  var Subject = document.getElementById("Subject").value;
+  var comment = document.getElementById("comment").value;
+  var error_message = document.getElementById("error_message");
+  
+  error_message.style.padding = "10px";
+  
+  var text;
+  if(Fname.length < 5){
+    text = "Please Enter valid Fname";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Please Enter valid Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(isNaN(URL) || URL.length != 10){
+    text = "Please Enter valid Phone Number";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(subject.length < 10){
+    text = "Please Enter Correct Subject";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(comment.length <= 140){
+    text = "Please Enter More Than 140 Characters";
+    error_message.innerHTML = text;
+    return false;
+  }
+  alert("Form Submitted Successfully!");
+  return true;
+}  
+    </script>    
+</head>
+<body>
+	<!--================ Header ================-->
+	<div class="header">
+		<img src="images/Buk.PNG.jpg" style="height: 105px;">
+		<h1>BAYERO UNIVERSITY KANO</h1>
+		<h6>Knowledge, Excellent & Service</h6>
+	</div>
+	<!-- Nav link -->
+	<div class="link">
+		<ul>
+			<li><a href="../Index.html">Home</a></li>
+			<li><a href="AboutUs.html">About us</a></li>
+			<li><a href="Faculties and Courses.html">Faculties and Courses</a></li>
+			<li><a href="https://web.facebook.com/groups/664971911646714">News</a></li>
+			<li><a href="Login.html">LogIn</a></li>
+			<li><a href="#">Contact us</a></li>
+		</ul>
+	</div>
+
+	<!--================ content1 ================-->
+	<div class="content1">
+		<p>
+			The University's campus is located in the city of Kano State, kano, an ancient town in North-western Nigeria. Kano itself was excised from kano state on Tuesday August 27, 1991. 
+		<hr>
+		    The state covers a total land area of about 22,410sq Km.
+		    It bordered on the west by Kano State, on the east Janguza
+		    and Gwarzo and on the North by Katsina State and Republic of Niger. 
+		<hr>
+			The University recognizes the importance of it's location in Kano and seeks to link it's <a href="Faculties and Courses.html">research and teaching</a> to the vast resources of these great metropolitan areas in the surrounding states.
+		</p>
+	</div>
+	<hr class="hr">
+    
+<!--================ form =====================-->
+    <div id="error_message">
+	    <form class="form1" form action="" id="myform" onsubmit = "return validate();">
+					<div class="mainform">
+						<div class="form">
+						<label for="Fname">User Name</label><br>
+						<input type="text" id="Fname">
+					</div>
+					<div class="form">
+						<label for="Email">Email Address</label><br>
+						<input type="text" id="Email">
+					</div>
+					<div class="form">
+						<label for="URL">Phone Number</label><br>
+						<input type="text" id="URL">
+					</div>
+					<div class="form">
+						<label for="Subject">Subject</label><br>
+						<input type="text" id="Subject">
+					</div>
+					</div>
+					<div class="textarea">
+						<label for="comment">Message</label><br>
+						<textarea type="text" id="comment"></textarea><br><br>
+						<input type="submit" id="submit" value="submit">
+					</div>
+		    </form>
+    </div>
+
+    <!--================ content1 ================-->
+	<div class="contact">
+        <h1 style="padding-top: 1vw">Contact us at</h1>
+        <hr>
+		<table width="70%" height=""cellpadding="20vw" bgcolor="" style="margin-left: 15%; margin-right: 15%">
+						<tr>
+							<td align="center" valign="top">
+								<font color="#fff" size="+2">
+									<a href="">
+										<i class="fa-brands fa-facebook-square"></i>
+									</a>
+								</font>
+							</td>
+							<td align="center" valign="top">
+								<font color="#fff" size="+2">
+									<a href="">
+										<i class="fa-brands fa-instagram"></i>
+									</a>
+								</font>
+							</td>
+							<td align="center" valign="top">
+								<font color="#fff" size="+2">
+									<a href="">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
+								</font>
+							</td>
+							<td align="center" valign="top">
+								<font color="#fff" size="+2">
+									<a href="">
+										<i class="fab fa-vimeo"></i>
+									</a>
+								</font>
+							</td>
+							<td align="center" valign="top">
+								<font color="#fff" size="+2">
+									<a href="">
+										<i class="fa-brands fa-twitter"></i>
+									</a>
+								</font>
+							</td>
+							<td align="center" valign="top">
+								<font color="#fff" size="+2">
+									<a href="">
+										<i class="fab fa-telegram-plane"></i>
+									</a>
+								</font>
+							</td>
+							<td align="center" valign="top">
+								<font color="#fff" size="+2">
+									<a href="">
+										<i class="fa-brands fa-whatsapp"></i>
+									</a>
+								</font>
+							</td>
+							<td align="center" valign="top">
+								<font color="#fff" size="+2">
+									<a href="">
+										<i class="fa fa-phone"></i>
+									</a>
+								</font>
+							</td>
+							<td align="center" valign="top">
+								<font color="#000" size="+2"> 
+									<a href="">
+										<i class="fa fa-cloud-download"></i>
+									</a>
+								</font>
+							</td>
+						</tr>
+					</table>		
+                </div>
+    <!--================ Footer ================-->
+    <footer class="footer">
+    	<p>
+    		&copy; 2023 Bayero University Kano.
+    		<hr style="margin: -12px auto -4px; width: 70vw; border-width: 0.15em; color: gold">
+    		All rights reserved
+    	</p>
+    </footer>
+</body>
+</html>

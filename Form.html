@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*=====================Form_section=====================*/
+.form_section{
+	width: 46%;
+	/*height: 22.5vw; */
+	border: 3px solid #000;
+	margin: auto;  
+	box-shadow: 1px 7px 15px; 
+	border-radius: 0.5vw;
+	background-color: #FFF;
+	float: right;
+	margin-top: 0.5vw;
+	margin-bottom: 0.7vw;
+}
+
+/*=====================Form=====================*/
+.form1{
+	float: right;
+}
+.Log {
+	font-size: 2.5vw; 
+	font-weight: 600; 
+	color: #0f6704; 
+	text-transform: bold; 
+	margin: 0.7vw 0 0 2vw; 
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Join{
+	float: right;
+	width: 65%;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.3vw;
+	margin: 3vw 0 -0.7vw 0;
+	color: #000;
+	font-size: 1.2vw;
+}
+.Email, .Password, .Login{
+	float: left;
+	height: 2.5vw;
+	width: 89.5%;
+	margin: 1vw 5% 0 5%;
+	font-size: 1.2vw; 
+	font-family: sans-serif;
+}
+.Login{
+	font-size: 1.4vw;
+	font-weight: 600;
+	margin: 1.7vw 5% 0.8vw 5%;
+	background-color: #0f6704;
+	color: #fff; 
+	opacity: 0.8;
+}
+.Login:hover{
+	background: linear-gradient(to bottom, green, #d39709, green, #d39709, green);
+}
+.SignUp{
+	float: left;
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.7vw;
+	color: blue;
+	margin-left: 7vw;
+}
+.Forgot{
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.7vw;
+	color: blue;
+	float: right;
+	margin-right: 7vw;
+}
+
+    </style>
+</head>
+<body>
+    <div class="form_section">
+        <form action="" class="form1" name="form1">
+            <label for="Login" class="Log">Login</label>
+            <label for="" class="Join">Students should use their Registration numbers as both UserName and passwords when login in for the first time</label><br>
+            <input type="email" name="EmailAddress" maxlength="50" class="Email" placeholder="Reg Number"><br>
+            <input type="password" name="Password" maxlength="50" class="Password" placeholder="Password"><br>
+            <input type="submit" name="LOGIN" value="LOGIN" class="Login" onclick="SinIn()"><br>
+            <p class="SignUp"><a href="SignUp.html">SignUp</a></p><p for="" class="Forgot"><a href="#">Forgot Password</a></p>
+        </form>
+      </div>
+  </div>
+ </div>
+</body>
+</html>
